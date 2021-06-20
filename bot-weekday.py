@@ -30,6 +30,7 @@ weekdaysStrip = [
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 #GUILD = os.getenv('DISCORD_GUILD')
+POSTCHAN = os.getenv('DISCORD_POSTCHANNELNAME')
 
 client = discord.Client()
 
@@ -40,7 +41,7 @@ async def on_ready():
   for guild in client.guilds:
     #if str(guild.id) == GUILD: #do it for any that is connected
     for channel in guild.channels:
-      if str(channel) == "general":
+      if str(channel) == POSTCHAN:
         await channel.send(weekdaysNancy[today.weekday()])
         await client.close()
 
