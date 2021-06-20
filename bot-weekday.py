@@ -17,6 +17,16 @@ weekdaysNancy = [
   "https://cdn.discordapp.com/attachments/689595176397832208/838397168196124692/image0.jpg", #SUNDAY
 ]
 
+weekdaysStrip = [
+  "https://cdn.discordapp.com/attachments/855962058728931360/856023151263481876/guy-mon.gif",
+  "https://cdn.discordapp.com/attachments/855962058728931360/856023273988423680/guy-tue.gif",
+  "https://cdn.discordapp.com/attachments/855962058728931360/856023359267274762/guy-wed.gif",
+  "https://cdn.discordapp.com/attachments/855962058728931360/856023425985413131/guy-thu.gif",
+  "https://cdn.discordapp.com/attachments/855962058728931360/856023504856154112/guy-fri.gif",
+  "https://cdn.discordapp.com/attachments/855962058728931360/856023710896750632/guy-sat.gif",
+  "https://cdn.discordapp.com/attachments/855962058728931360/856023770267254794/guy-sun.gif"
+]
+
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 #GUILD = os.getenv('DISCORD_GUILD')
