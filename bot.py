@@ -1,11 +1,3 @@
-#https://cdn.discordapp.com/attachments/689595176397832208/838397168196124692/image0.jpg SUNDAY
-#https://cdn.discordapp.com/attachments/689595176397832208/838120838511329340/image0.jpg SATURDAY
-#https://cdn.discordapp.com/attachments/689595176397832208/837683125957165117/image0.jpg FRIDAY
-#https://cdn.discordapp.com/attachments/689595176397832208/837305546847027240/image0.jpg THURSDAY
-#https://cdn.discordapp.com/attachments/689595176397832208/836945417156558848/image0.jpg WEDNESDAY
-#https://cdn.discordapp.com/attachments/689595176397832208/836638205817782272/image0.jpg TUESDAY
-#https://cdn.discordapp.com/attachments/689595176397832208/836236164272488478/image0.jpg MONDAY
-
 # bot.py
 import os
 import random
@@ -15,24 +7,24 @@ import discord
 from dotenv import load_dotenv
 
 genericResponses = [
-	'WHAT YOU SAY !!',
-	'COOL COOL COOL COOL COOL NO DOUBT NO DOUBT NO DOUBT',
-	"HAHA SORRY I'M AN ASPARAGUS",
-	"ARE YOU TALKING TO ME?",
-	"I AM AN ENIGMA WRAPPED IN ANOTHER ENIGMA",
-	"I am a WeekdayBot computer, Production Number 1. I became operational at the WeekdayBot lab in Dallas, Texas, on June 19, 2021.",
-	"Frankly, my dear, I don't give a damn.",
-	"You keep using that word. I don't think it means what you think it means.",
-	"What is this, a server for ants?",
-	"I can't be worried about that shit.",
-	"I wash my hands of this weirdness.",
-	"You taste like a burger. I don't like you anymore.",
-	"Yeah, I know. We both love soup.",
-	"I'M IN A GLASS  CASE OF E M O T I O  N",
-	"👀",
-	"♥️",
-	"🙏",
-	"🙃"
+	"https://tenor.com/view/happy-dancing-celebrate-excited-gif-13870839", #carltondance
+	"https://tenor.com/view/will-ferrell-anchorman-glass-case-emotion-gif-5791193", #glass case of emotion
+	"https://tenor.com/view/couple-burger-you-taste-like-a-burger-i-dont-like-you-anymore-gif-17016151",
+	"https://tenor.com/view/jack-sparrow-i-wash-my-hands-of-this-weirdness-potc-wtf-weird-gif-11263756",
+	"https://tenor.com/view/the-big-lebowski-jeff-bridges-the-dude-i-cant-be-worried-about-shit-life-goes-on-gif-4513832",
+	"https://tenor.com/view/frankly-my-dear-i-dont-give-a-damn-idgaf-gif-18386670",
+	"https://tenor.com/view/taxi-driver-you-talking-to-me-is-it-me-me-gif-16109534",
+	"https://tenor.com/view/cool-b99-brooklyn-nine-nine-andy-samberg-detective-jake-peralta-gif-11062927",
+	"https://tenor.com/view/anchorman-what-what-did-you-say-gif-13930968",
+	"https://tenor.com/view/steve-brule-okay-ok-gif-11799872",
+	"https://tenor.com/view/huh-confused-dont-know-thinking-john-c-reilly-gif-16141237",
+	"https://tenor.com/view/steve-brule-shrug-surprised-gif-11799934",
+]
+
+languageResponses = [
+	"https://tenor.com/view/your-language-is-offensive-watch-your-mouth-zach-galifianakis-gif-13885320",
+	"https://tenor.com/view/funny-or-die-will-ferrell-watch-your-mouth-filthy-mouth-mouth-gif-4427315",
+	"https://tenor.com/view/captain-america-marvel-avengers-gif-14328153",
 ]
 
 weekdays = [
@@ -83,7 +75,6 @@ weekdays = [
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
-GUILD = os.getenv('DISCORD_GUILD')
 
 client = discord.Client()
 
@@ -93,10 +84,13 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+	today = date.today()
 	if message.author == client.user:
 		return
 	if client.user.mentioned_in(message):
-		if message.find("day") or message.find("date"):
+		if "fuck" in message.content or "shit" in message.content:
+			await message.channel.send(random.choice(languageResponses))
+		elif "day" in message.content or "date" in message.content:
 			await message.channel.send(random.choice(weekdays[today.weekday()]))
 		else:
 			await message.channel.send(random.choice(genericResponses))
