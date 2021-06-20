@@ -43,6 +43,6 @@ async def on_ready():
     for channel in guild.channels:
       if str(channel) == POSTCHAN:
         await channel.send(weekdaysNancy[today.weekday()])
-        await client.close()
+  await client.close()
 
 client.run(TOKEN)
