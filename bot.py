@@ -28,6 +28,11 @@ languageResponses = [
   "https://tenor.com/view/scandal-scandalous-wink-cat-shocked-gif-15502893"
 ]
 
+whoResponses = [
+  "https://cdn.discordapp.com/attachments/855962058728931360/856205995276369930/hal.gif",
+  "https://cdn.discordapp.com/attachments/855962058728931360/856206275334766622/wopr.gif",
+]
+
 weekdays = [
   [ #MONDAY
     "monday",
@@ -43,6 +48,7 @@ weekdays = [
   ],
   [ #WEDNESDAY
     "wensday",
+    "wednesday",
     "https://tenor.com/view/wednesday-dance-celebrate-happy-wednesday-gif-10812164",
     "https://tenor.com/view/tee-tess-morning-good-blessings-gif-18801330",
     "https://tenor.com/view/yay-wednesday-yay-wednesday-happy-wednesday-happy-dance-gif-13946864"
@@ -90,6 +96,8 @@ async def on_message(message):
   if client.user.mentioned_in(message):
     if "fuck" in message.content or "shit" in message.content:
       await message.channel.send(random.choice(languageResponses))
+    elif "who" in message.content:
+      await message.channel.send(random.choice(whoResponses))
     elif "day" in message.content or "date" in message.content:
       await message.channel.send(random.choice(weekdays[today.weekday()]))
     else:
