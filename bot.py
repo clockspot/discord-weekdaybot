@@ -14,11 +14,19 @@ from dotenv import load_dotenv
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
+GUILD = os.getenv('DISCORD_GUILD')
 
 client = discord.Client()
 
 @client.event
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
+    for guild in client.guilds:
+        print(f'Connected to {guild.name} ({guild.id})')
+        if str(guild.id) == GUILD:
+            print(f"This is the one we're interested in")
+            members = '\n - '.join([member.name for member in guild.members])
+            print(f'Guild Members:\n - {members}')
+            break
 
 client.run(TOKEN)
