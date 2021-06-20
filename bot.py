@@ -8,18 +8,24 @@ from dotenv import load_dotenv
 
 genericResponses = [
   "https://tenor.com/view/happy-dancing-celebrate-excited-gif-13870839", #carltondance
-  "https://tenor.com/view/will-ferrell-anchorman-glass-case-emotion-gif-5791193", #glass case of emotion
+  #"https://tenor.com/view/will-ferrell-anchorman-glass-case-emotion-gif-5791193", #glass case of emotion
   "https://tenor.com/view/couple-burger-you-taste-like-a-burger-i-dont-like-you-anymore-gif-17016151",
-  "https://tenor.com/view/jack-sparrow-i-wash-my-hands-of-this-weirdness-potc-wtf-weird-gif-11263756",
+  #"https://tenor.com/view/jack-sparrow-i-wash-my-hands-of-this-weirdness-potc-wtf-weird-gif-11263756",
   "https://tenor.com/view/the-big-lebowski-jeff-bridges-the-dude-i-cant-be-worried-about-shit-life-goes-on-gif-4513832",
   "https://tenor.com/view/frankly-my-dear-i-dont-give-a-damn-idgaf-gif-18386670",
   "https://tenor.com/view/taxi-driver-you-talking-to-me-is-it-me-me-gif-16109534",
-  "https://tenor.com/view/cool-b99-brooklyn-nine-nine-andy-samberg-detective-jake-peralta-gif-11062927",
-  "https://tenor.com/view/anchorman-what-what-did-you-say-gif-13930968",
+  #"https://tenor.com/view/cool-b99-brooklyn-nine-nine-andy-samberg-detective-jake-peralta-gif-11062927",
+  #"https://tenor.com/view/anchorman-what-what-did-you-say-gif-13930968",
   "https://tenor.com/view/steve-brule-okay-ok-gif-11799872",
   "https://tenor.com/view/huh-confused-dont-know-thinking-john-c-reilly-gif-16141237",
   "https://tenor.com/view/steve-brule-shrug-surprised-gif-11799934",
   "https://tenor.com/view/stfu-i-dont-care-ned-flanders-gif-18152062",
+  "https://tenor.com/view/gifminster-matt-hancock-hancock-laughing-laughing-hysterically-gif-17657084",
+  "https://tenor.com/view/awkward-nod-okay-then-uncomfortable-gif-10597719",
+  "https://tenor.com/view/sure-thing-ok-whatever-uhhuh-gif-3871592",
+  "https://tenor.com/view/kazoo-kid-wow-amazed-awkward-looking-gif-5484661",
+  "https://tenor.com/view/funny-silly-wtf-crazy-kitty-gif-12896137",
+  "https://tenor.com/view/star-trek-data-shrug-what-no-idea-gif-13886831",
 ]
 
 languageResponses = [
@@ -35,6 +41,7 @@ whoResponses = [
   "https://cdn.discordapp.com/attachments/855962058728931360/856206275334766622/wopr.gif",
   "https://tenor.com/view/computer-probloms-gif-18129019",
   "https://tenor.com/view/1984-movie-projector-gif-8163423",
+  "https://tenor.com/view/star-trek-data-shrug-what-no-idea-gif-13886831",
 ]
 
 weekdays = [
