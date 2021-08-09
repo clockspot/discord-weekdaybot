@@ -55,6 +55,42 @@ weekdays = [
     "https://cdn.discordapp.com/attachments/855962058728931360/856549233926078495/giphy-1.gif", #sat
     "https://cdn.discordapp.com/attachments/855962058728931360/856549797984731136/happy-sunday-cats.jpg", #sun
   ],
+  [ #sparkle blessings
+    "https://tenor.com/view/blessings-god-bless-family-sparkle-monday-blessings-gif-16731080", #mon
+    "https://tenor.com/view/tuesday-typical-tuesday-another-tuesday-elmo-tuesday-potty-elmo-tuesday-gif-21048101", #tue
+    "https://tenor.com/view/tee-tess-morning-good-blessings-gif-18801330", #wed
+    "https://c.tenor.com/DPVIwmxEmgYAAAAC/happy-thursday.gif", #thu
+    "https://c.tenor.com/ldnhJe8zeBUAAAAC/jumma-mubarak-good-morning.gif", #fri
+    "https://tenor.com/view/svaradiofm-happy-saturday-make-the-most-of-this-day-laugh-love-read-just-be-happy-gif-15042816", #sat
+    "https://tenor.com/view/lovely-sunday-have-a-good-day-flowers-butterfly-gif-8661074", #sun
+  ],
+  [ #cats
+    "https://tenor.com/view/monday-oh-hell-its-monday-kitten-gif-12614221", #mon
+    "https://c.tenor.com/DYhRqMQu5cUAAAAC/cat-typing.gif", #tue
+    "https://tenor.com/view/yay-wednesday-yay-wednesday-happy-wednesday-happy-dance-gif-13946864", #wed
+    "https://tenor.com/view/thursday-friday-funny-when-you-thought-its-fridayn-its-only-thursday-gif-15583680", #thu
+    "https://tenor.com/view/purrfect-its-friday-cat-kitten-kitty-gif-16398687", #fri
+    "https://tenor.com/view/hello-top-of-the-morning-top-hat-cat-cheerio-gif-13926359", #sat
+    "https://c.tenor.com/GmAjGttBWjIAAAAC/cat-kitten.gif", #sun
+  ],
+  [ #itysl guy
+    "https://c.tenor.com/xO1tDRNiYI4AAAAC/stinky-fart.gif",
+    "https://c.tenor.com/9H0xDgUjUR4AAAAC/toast-dead.gif",
+    "https://c.tenor.com/T6DRX77UpSgAAAAC/focus-group-oh-nice.gif",
+    "https://c.tenor.com/-w2DeZAuzQEAAAAC/focus-group-admit-it.gif",
+    "https://c.tenor.com/t4LTqvGNTGUAAAAC/good-idea-i-stand-by-it.gif",
+    "https://c.tenor.com/H4f-WMRVeAsAAAAC/im-doing-the-best-im-the-best.gif",
+    "https://c.tenor.com/hAdOE2zI1EEAAAAC/shut-up-paul-i-think-you-should-leave.gif"
+  ],
+  [ #random
+    "https://tenor.com/view/monday-its-monday-when-monday-hits-monday-morning-gm-gif-14243228", #kid runs into wall
+    "https://cdn.discordapp.com/attachments/855980303570042910/874152902569115648/1a2f1f5c9da70b147b7c8fba1435a15b.gif", #on a tuesday in space
+    "https://cdn.discordapp.com/attachments/855980303570042910/874153351640653824/giphy-4.gif", #wacky wednesday bubbles guy
+    "https://cdn.discordapp.com/attachments/855980303570042910/874153923403989022/giphy-5.gif", #data high five
+    "https://cdn.discordapp.com/attachments/855980303570042910/874154726994886707/giphy-7.gif", #surfing grandma
+    "https://tenor.com/view/saturday-dance-old-dancing-party-hard-gif-11712974", #grandma in the kitchen with friends
+    "https://c.tenor.com/jNlvxznV_6cAAAAd/happy-funday-sunday.gif", #reverse mimosa
+  ],
 ]
 
 load_dotenv()
