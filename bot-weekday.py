@@ -64,15 +64,6 @@ weekdays = [
     "https://tenor.com/view/svaradiofm-happy-saturday-make-the-most-of-this-day-laugh-love-read-just-be-happy-gif-15042816", #sat
     "https://tenor.com/view/lovely-sunday-have-a-good-day-flowers-butterfly-gif-8661074", #sun
   ],
-  [ #cats
-    "https://tenor.com/view/monday-oh-hell-its-monday-kitten-gif-12614221", #mon
-    "https://c.tenor.com/DYhRqMQu5cUAAAAC/cat-typing.gif", #tue
-    "https://tenor.com/view/yay-wednesday-yay-wednesday-happy-wednesday-happy-dance-gif-13946864", #wed
-    "https://tenor.com/view/thursday-friday-funny-when-you-thought-its-fridayn-its-only-thursday-gif-15583680", #thu
-    "https://tenor.com/view/purrfect-its-friday-cat-kitten-kitty-gif-16398687", #fri
-    "https://tenor.com/view/hello-top-of-the-morning-top-hat-cat-cheerio-gif-13926359", #sat
-    "https://c.tenor.com/GmAjGttBWjIAAAAC/cat-kitten.gif", #sun
-  ],
   [ #itysl guy
     "https://c.tenor.com/xO1tDRNiYI4AAAAC/stinky-fart.gif",
     "https://c.tenor.com/9H0xDgUjUR4AAAAC/toast-dead.gif",
@@ -81,6 +72,15 @@ weekdays = [
     "https://c.tenor.com/t4LTqvGNTGUAAAAC/good-idea-i-stand-by-it.gif",
     "https://c.tenor.com/H4f-WMRVeAsAAAAC/im-doing-the-best-im-the-best.gif",
     "https://c.tenor.com/hAdOE2zI1EEAAAAC/shut-up-paul-i-think-you-should-leave.gif"
+  ],
+  [ #cats
+    "https://tenor.com/view/monday-oh-hell-its-monday-kitten-gif-12614221", #mon
+    "https://c.tenor.com/DYhRqMQu5cUAAAAC/cat-typing.gif", #tue
+    "https://tenor.com/view/yay-wednesday-yay-wednesday-happy-wednesday-happy-dance-gif-13946864", #wed
+    "https://tenor.com/view/thursday-friday-funny-when-you-thought-its-fridayn-its-only-thursday-gif-15583680", #thu
+    "https://tenor.com/view/purrfect-its-friday-cat-kitten-kitty-gif-16398687", #fri
+    "https://tenor.com/view/hello-top-of-the-morning-top-hat-cat-cheerio-gif-13926359", #sat
+    "https://c.tenor.com/GmAjGttBWjIAAAAC/cat-kitten.gif", #sun
   ],
   [ #random
     "https://tenor.com/view/monday-its-monday-when-monday-hits-monday-morning-gm-gif-14243228", #kid runs into wall
@@ -91,6 +91,16 @@ weekdays = [
     "https://tenor.com/view/saturday-dance-old-dancing-party-hard-gif-11712974", #grandma in the kitchen with friends
     "https://c.tenor.com/jNlvxznV_6cAAAAd/happy-funday-sunday.gif", #reverse mimosa
   ],
+]
+
+weekdayNames = [
+  "monday",
+  "tuesday",
+  "wednesday",
+  "thursday",
+  "friday",
+  "saturday",
+  "sunday"
 ]
 
 load_dotenv()
@@ -109,6 +119,8 @@ async def on_ready():
     for channel in guild.channels:
       if str(channel) == POSTCHAN:
         #send the current weekday from the set of weekdays determined by current ISO week
+        if(today.isocalendar()[1]==6):
+          await channel.send(weekdayNames[today.weekday()])
         await channel.send(weekdays[today.isocalendar()[1]%len(weekdays)][today.weekday()])
   await client.close()
 
