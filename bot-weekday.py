@@ -119,7 +119,7 @@ async def on_ready():
     for channel in guild.channels:
       if str(channel) == POSTCHAN:
         #send the current weekday from the set of weekdays determined by current ISO week
-        if(today.isocalendar()[1]==6):
+        if(today.isocalendar()[1]%len(weekdays)==6):
           await channel.send(weekdayNames[today.weekday()])
         await channel.send(weekdays[today.isocalendar()[1]%len(weekdays)][today.weekday()])
   await client.close()
