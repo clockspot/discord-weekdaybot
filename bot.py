@@ -6,7 +6,7 @@ from datetime import date
 import discord
 from dotenv import load_dotenv
 
-genericResponsesOld = [
+genericResponsesClassic = [
   "https://tenor.com/view/happy-dancing-celebrate-excited-gif-13870839", #carltondance
   #"https://tenor.com/view/will-ferrell-anchorman-glass-case-emotion-gif-5791193", #glass case of emotion
   "https://tenor.com/view/couple-burger-you-taste-like-a-burger-i-dont-like-you-anymore-gif-17016151",
@@ -28,7 +28,7 @@ genericResponsesOld = [
   "https://tenor.com/view/star-trek-data-shrug-what-no-idea-gif-13886831",
 ]
 
-genericResponses = [
+genericResponsesPaulRudd = [
   #"https://c.tenor.com/z6HsOw58c4wAAAAC/paul-rudd-shiit.gif",
   "https://c.tenor.com/k4HLyTN-2KIAAAAC/paul-rudd-eyebrow-raise.gif",
   #"https://c.tenor.com/he0KLHEhAOoAAAAC/who-wouldve-thought-not-me.gif",
@@ -48,7 +48,7 @@ genericResponses = [
   "https://c.tenor.com/M_Hdbq1CergAAAAC/paul-rudd-y-fronts.gif",
 ]
 
-itysl = [
+genericResponsesITYSL = [
   "https://c.tenor.com/zh7nN3zhlXMAAAAC/shut-up-paul-i-think-you-should-leave.gif",
   "https://c.tenor.com/b-291TsIh3EAAAAC/tim-robinson-i-think-you-should-leave.gif", #you sure about that
   "https://c.tenor.com/mUmjFyiLT5IAAAAC/hat-itysl.gif",
@@ -69,30 +69,44 @@ itysl = [
   #"https://c.tenor.com/qqHH5NeIeK8AAAAC/bones-equal-dollars-tim-robinson.gif",
 ]
 
-languageResponses = [
-  "https://c.tenor.com/z6HsOw58c4wAAAAC/paul-rudd-shiit.gif",
-  "https://c.tenor.com/b9kJkNjYbV8AAAAC/paul-paulrudd.gif",
-  # "https://tenor.com/view/your-language-is-offensive-watch-your-mouth-zach-galifianakis-gif-13885320",
-  # "https://tenor.com/view/funny-or-die-will-ferrell-watch-your-mouth-filthy-mouth-mouth-gif-4427315",
-  # "https://tenor.com/view/captain-america-marvel-avengers-gif-14328153",
-  # "https://tenor.com/view/scandal-scandalous-wink-cat-shocked-gif-15502893",
-  # "https://tenor.com/view/fuck-you-no-elton-john-gif-12191991",
-  
-  #itysl
-  #"https://c.tenor.com/QKKbKED9PmcAAAAC/dont-swear-swear.gif",
-  #"https://c.tenor.com/SPC_2svCnQIAAAAC/pice-of-shit-pos.gif",
-  #"https://c.tenor.com/zh7nN3zhlXMAAAAC/shut-up-paul-i-think-you-should-leave.gif",
-  #"https://c.tenor.com/u0y_mjZMm2sAAAAC/come-here-little-fuck.gif"
+languageResponsesClassic = [
+  "https://tenor.com/view/your-language-is-offensive-watch-your-mouth-zach-galifianakis-gif-13885320",
+  "https://tenor.com/view/funny-or-die-will-ferrell-watch-your-mouth-filthy-mouth-mouth-gif-4427315",
+  "https://tenor.com/view/captain-america-marvel-avengers-gif-14328153",
+  "https://tenor.com/view/scandal-scandalous-wink-cat-shocked-gif-15502893",
+  "https://tenor.com/view/fuck-you-no-elton-john-gif-12191991",
 ]
 
-whoResponses = [
-  #"https://c.tenor.com/Vv2tv9E50AIAAAAC/i-cannot-talk-about-it-i-think-you-should-leave-with-tim-robinson.gif",
+languageResponsesPaulRudd = [
+  "https://c.tenor.com/z6HsOw58c4wAAAAC/paul-rudd-shiit.gif",
+  "https://c.tenor.com/b9kJkNjYbV8AAAAC/paul-paulrudd.gif",
+]
+  
+languageResponsesITYSL = [
+  "https://c.tenor.com/QKKbKED9PmcAAAAC/dont-swear-swear.gif",
+  "https://c.tenor.com/SPC_2svCnQIAAAAC/pice-of-shit-pos.gif",
+  "https://c.tenor.com/zh7nN3zhlXMAAAAC/shut-up-paul-i-think-you-should-leave.gif",
+  "https://c.tenor.com/u0y_mjZMm2sAAAAC/come-here-little-fuck.gif"
+]
 
+whoResponsesClassic = [
   "https://cdn.discordapp.com/attachments/855962058728931360/856205995276369930/hal.gif",
   "https://cdn.discordapp.com/attachments/855962058728931360/856206275334766622/wopr.gif",
   "https://tenor.com/view/computer-probloms-gif-18129019",
   "https://tenor.com/view/1984-movie-projector-gif-8163423",
   "https://tenor.com/view/star-trek-data-shrug-what-no-idea-gif-13886831",
+]
+
+whoResponsesPaulRudd = [
+  "https://c.tenor.com/z6HsOw58c4wAAAAC/paul-rudd-shiit.gif",
+]
+
+whoResponsesITYSL = [
+  "https://c.tenor.com/Vv2tv9E50AIAAAAC/i-cannot-talk-about-it-i-think-you-should-leave-with-tim-robinson.gif"
+]
+
+worriedResponsesITYSL = [
+  "https://i.giphy.com/media/c7seQb6ViPLoS0T6oK/200w.gif"
 ]
 
 weekdays = [
@@ -195,15 +209,16 @@ async def on_message(message):
   if message.author == client.user:
     return
   if client.user.mentioned_in(message):
-    if "fuck" in message.content or "shit" in message.content:
-      await message.channel.send(random.choice(languageResponses))
+    if "fuck" in message.content or "shit" in message.content or "arse" in message.content or "ass" in message.content:
+      await message.channel.send(random.choice(languageResponsesITYSL))
+    if "worried" in message.content:
+      await message.channel.send(random.choice(worriedResponsesITYSL))
     elif "who" in message.content:
-      await message.channel.send(random.choice(genericResponses))
-      # await message.channel.send(random.choice(whoResponses))
+      await message.channel.send(random.choice(whoResponsesITYSL))
     elif "day" in message.content or "date" in message.content:
       await message.channel.send(random.choice(weekdays[today.weekday()]))
     else:
-      await message.channel.send(random.choice(genericResponses))
+      await message.channel.send(random.choice(genericResponsesITYSL))
     return
 
 client.run(TOKEN)
