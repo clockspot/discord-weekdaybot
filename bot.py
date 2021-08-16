@@ -211,7 +211,7 @@ async def on_message(message):
   if client.user.mentioned_in(message):
     if "fuck" in message.content or "shit" in message.content or "arse" in message.content or "ass" in message.content:
       await message.channel.send(random.choice(languageResponsesITYSL))
-    if "worried" in message.content:
+    elif "worried" in message.content:
       await message.channel.send(random.choice(worriedResponsesITYSL))
     elif "who" in message.content:
       await message.channel.send(random.choice(whoResponsesITYSL))
