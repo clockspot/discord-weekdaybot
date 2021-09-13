@@ -69,6 +69,15 @@ genericResponsesITYSL = [
   #"https://c.tenor.com/qqHH5NeIeK8AAAAC/bones-equal-dollars-tim-robinson.gif",
 ]
 
+genericResponsesFrench = [
+  "https://cdn.discordapp.com/attachments/855980303570042910/886792492706566154/french-taunt.gif",
+  "https://cdn.discordapp.com/attachments/855980303570042910/886792614978940958/oui.gif",
+  "https://cdn.discordapp.com/attachments/855980303570042910/886792681789984808/ah-ouais-daccord.gif",
+  "https://cdn.discordapp.com/attachments/855980303570042910/886792726685843466/ah-mais-oui.gif",
+  "https://cdn.discordapp.com/attachments/855980303570042910/886794505272033300/baguette-baugette.gif",
+  "https://cdn.discordapp.com/attachments/855980303570042910/886795513280725062/bonjour-41.gif",
+]
+
 languageResponsesClassic = [
   "https://tenor.com/view/your-language-is-offensive-watch-your-mouth-zach-galifianakis-gif-13885320",
   "https://tenor.com/view/funny-or-die-will-ferrell-watch-your-mouth-filthy-mouth-mouth-gif-4427315",
@@ -89,6 +98,13 @@ languageResponsesITYSL = [
   "https://c.tenor.com/u0y_mjZMm2sAAAAC/come-here-little-fuck.gif"
 ]
 
+languageResponsesFrench = [
+  "https://cdn.discordapp.com/attachments/855980303570042910/886792430207250472/putain.jpg",
+  "https://cdn.discordapp.com/attachments/855980303570042910/886792492706566154/french-taunt.gif",
+  "https://cdn.discordapp.com/attachments/855980303570042910/886792776979714068/putain-merde.gif",
+  "https://cdn.discordapp.com/attachments/855980303570042910/886794550750887977/1169308430_preview_triggered_8.gif",
+]
+
 whoResponsesClassic = [
   "https://cdn.discordapp.com/attachments/855962058728931360/856205995276369930/hal.gif",
   "https://cdn.discordapp.com/attachments/855962058728931360/856206275334766622/wopr.gif",
@@ -103,6 +119,12 @@ whoResponsesPaulRudd = [
 
 whoResponsesITYSL = [
   "https://c.tenor.com/Vv2tv9E50AIAAAAC/i-cannot-talk-about-it-i-think-you-should-leave-with-tim-robinson.gif"
+]
+
+whoResponsesFrench = [
+  "https://cdn.discordapp.com/attachments/855980303570042910/886792492706566154/french-taunt.gif",
+  "https://cdn.discordapp.com/attachments/855980303570042910/886793734308642835/giphy-2.gif",
+  "https://cdn.discordapp.com/attachments/855980303570042910/886793790625570816/je-suis-ton-pere-dark-vador.gif",
 ]
 
 worriedResponsesITYSL = [
@@ -210,15 +232,15 @@ async def on_message(message):
     return
   if client.user.mentioned_in(message):
     if "fuck" in message.content or "shit" in message.content or "arse" in message.content or "ass" in message.content:
-      await message.channel.send(random.choice(languageResponsesITYSL))
+      await message.channel.send(random.choice(languageResponsesFrench))
     elif "worried" in message.content:
       await message.channel.send(random.choice(worriedResponsesITYSL))
     elif "who" in message.content:
-      await message.channel.send(random.choice(whoResponsesITYSL))
+      await message.channel.send(random.choice(whoResponsesFrench))
     elif "day" in message.content or "date" in message.content:
       await message.channel.send(random.choice(weekdays[today.weekday()]))
     else:
-      await message.channel.send(random.choice(genericResponsesITYSL))
+      await message.channel.send(random.choice(genericResponsesFrench))
     return
 
 client.run(TOKEN)

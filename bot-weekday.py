@@ -19,15 +19,24 @@ weekdays = [
     "https://cdn.discordapp.com/attachments/689595176397832208/838120838511329340/image0.jpg", #SATURDAY
     "https://cdn.discordapp.com/attachments/689595176397832208/838397168196124692/image0.jpg", #SUNDAY
   ],
-  [ #mutts today's the day
-    "https://cdn.discordapp.com/attachments/855962058728931360/856545968097591296/ttd-mon.jpg",
-    "https://cdn.discordapp.com/attachments/855962058728931360/856546058406723584/ttd-tue.jpg",
-    "https://cdn.discordapp.com/attachments/855962058728931360/856546093756055572/ttd-wed.jpg",
-    "https://cdn.discordapp.com/attachments/855962058728931360/856546126715289660/ttd-thu.jpg",
-    "https://cdn.discordapp.com/attachments/855962058728931360/856546161221435412/ttd-fri.jpg",
-    "https://cdn.discordapp.com/attachments/855962058728931360/856546190326104084/ttd-sat.jpg",
-    "https://cdn.discordapp.com/attachments/855962058728931360/856546218536206336/ttd-sun.jpg",
+  [ #français
+    "https://cdn.discordapp.com/attachments/855980303570042910/886790131447656448/giphy.gif",
+    "https://cdn.discordapp.com/attachments/855980303570042910/886790938922471435/bon-mardi-26.gif",
+    "https://cdn.discordapp.com/attachments/855980303570042910/886791019495039016/mercredi.gif",
+    "https://cdn.discordapp.com/attachments/855980303570042910/886791061840736297/jeudi.gif",
+    "https://cdn.discordapp.com/attachments/855980303570042910/886791117125853184/vendredi.gif",
+    "https://cdn.discordapp.com/attachments/855980303570042910/886791921689833483/bon-samedi-boo.gif",
+    "https://cdn.discordapp.com/attachments/855980303570042910/886791996553953337/dimanche.gif",
   ],
+  # [ #mutts today's the day
+  #   "https://cdn.discordapp.com/attachments/855962058728931360/856545968097591296/ttd-mon.jpg",
+  #   "https://cdn.discordapp.com/attachments/855962058728931360/856546058406723584/ttd-tue.jpg",
+  #   "https://cdn.discordapp.com/attachments/855962058728931360/856546093756055572/ttd-wed.jpg",
+  #   "https://cdn.discordapp.com/attachments/855962058728931360/856546126715289660/ttd-thu.jpg",
+  #   "https://cdn.discordapp.com/attachments/855962058728931360/856546161221435412/ttd-fri.jpg",
+  #   "https://cdn.discordapp.com/attachments/855962058728931360/856546190326104084/ttd-sat.jpg",
+  #   "https://cdn.discordapp.com/attachments/855962058728931360/856546218536206336/ttd-sun.jpg",
+  # ],
   [ #sign language
     "https://cdn.discordapp.com/attachments/855962058728931360/856547401233203260/source-1.gif", #mon
     "https://cdn.discordapp.com/attachments/855962058728931360/856547484847702056/5c2dd13b01a59f138c2a9a427d53a858.gif", #tue
