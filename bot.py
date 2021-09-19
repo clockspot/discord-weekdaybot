@@ -42,7 +42,7 @@ async def on_message(message):
     elif today >= date(2021,9,13): #ann's bday 9/14
       theme = themes.french
     
-    if theme.languageResponses and ("fuck" in message.content or "f*ck" in message.content or "Fuck" in message.content or "FUCK" in message.content or "shit" in message.content or "Shit" in messgae.content or "SHIT" in message.content or "arse" in message.content or " ass" in message.content):
+    if theme.languageResponses and ("fuck" in message.content or "f*ck" in message.content or "Fuck" in message.content or "FUCK" in message.content or "shit" in message.content or "Shit" in message.content or "SHIT" in message.content or "arse" in message.content or " ass" in message.content):
       await message.channel.send(random.choice(theme.languageResponses))
     elif theme.whoResponses and ("who" in message.content):
       await message.channel.send(random.choice(theme.whoResponses))
