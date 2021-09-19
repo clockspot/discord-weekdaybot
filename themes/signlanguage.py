@@ -1,4 +1,8 @@
-#genericResponses = []
+genericResponses = False
+
+languageResponses = False
+
+whoResponses = False
 
 weekdays = [
   [ #MONDAY

@@ -31,6 +31,8 @@ languageResponses = [
   "https://64.media.tumblr.com/3b969f7d6ea35caa409ad25d4e6c7b42/c0a799cbbfc0f0a4-52/s250x400/10f5bffb1dafc717c2b903e77cff9665e70b738f.gifv", #intense emotion
 ]
 
+whoResponses = False
+
 weekdays = [
   [ #MONDAY
     "https://cdn.discordapp.com/attachments/855980303570042910/889223971529179206/niccage-monday.gif"

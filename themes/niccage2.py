@@ -30,7 +30,7 @@ languageResponses = [
   # "https://m.media-amazon.com/images/I/71ZmN0-fM3L._AC_SX466_.jpg",
 ]
 
-whoResponses = false
+whoResponses = False
 
 weekdays = [
   [ #MONDAY

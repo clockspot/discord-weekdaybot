@@ -13,7 +13,7 @@ languageResponses = [
   "https://cdn.discordapp.com/attachments/855980303570042910/889233065338101780/niccage-snowwhite-no.gif",
 ]
 
-whoResponses = false
+whoResponses = False
 
 weekdays = [
   [ #MONDAY
