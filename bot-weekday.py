@@ -28,6 +28,7 @@ async def on_ready():
     #if str(guild.id) == GUILD: #do it for any that is connected
     for channel in guild.channels:
       if str(channel) == POSTCHAN:
+        today = date.today()
         #In original usage, I had an array of weekday sets, and we would send the current weekday determined by ISO week % number of sets (last appeared in commit f89d7dd 2021-09-12)
         #themes, part 2 (see part 1)
         theme = themes.default
