@@ -29,7 +29,7 @@ async def on_message(message):
   from datelist.py import *
   
   if client.user.mentioned_in(message):
-    if languageResponses and ("fuck" in message.content or "shit" in message.content or "arse" in message.content or "ass" in message.content):
+    if languageResponses and ("fuck" in message.content or "f*ck" in message.content or "Fuck" in message.content or "FUCK" in message.content or "shit" in message.content or "Shit" in messgae.content or "SHIT" in message.content or "arse" in message.content or " ass" in message.content):
       await message.channel.send(random.choice(languageResponses))
     elif whoResponses and ("who" in message.content):
       await message.channel.send(random.choice(whoResponses))
