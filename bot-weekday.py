@@ -44,7 +44,7 @@ async def on_ready():
           theme = themes.french
           
         if theme.weekdays: #if theme specifies weekdays, send the first – any others can come as responses to bot.py
-          await channel.send(theme.weekdays[today.weekday()])
+          await channel.send(theme.weekdays[today.weekday()][0])
         else: #if theme doesn't specify weekdays, send a random one from default theme
           await channel.send(random.choice(themes.default.weekdays[today.weekday()]))
           
