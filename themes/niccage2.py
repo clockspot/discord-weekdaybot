@@ -14,11 +14,10 @@ genericResponses = [
   "https://thumbs.gfycat.com/ConventionalHollowAmericanmarten-max-1mb.gif", #starfish
   "https://i.imgur.com/C9x6eJO.gif", #squash and stretch
   "https://i.pinimg.com/originals/ec/20/c3/ec20c33d955698fd029138e9fcafd5e6.gif", #pink dress animated
-  "https://cms.qz.com/wp-content/uploads/2015/07/nicolas_cage_2.gif?quality=75&strip=all&w=450&h=253&crop=1", #windows
+  "https://cms.qz.com/wp-content/uploads/2015/07/nicolas_cage_2.gif", #windows
   "https://iruntheinternet.com/lulzdump/images/gifs/community-abed-Nicolas-cage-noises-class-1388932410K.gif",
   "https://thumbs.gfycat.com/GiganticCourageousChuckwalla-size_restricted.gif", #summer of 2011
-  "https://akns-images.eonline.com/eol_images/Entire_Site/201506/rs_500x290-150106140457-tumblr_mihnevT0Jb1qasthro1_500.gif?fit=around%7C500:290&output-quality=90&crop=500:290;center,top", #clapping woman
-  "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F457748749620160789%2F&psig=AOvVaw3mKJgJqYpdwbS2lI6h8uWx&ust=1632171451848000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMC9kdD2i_MCFQAAAAAdAAAAABBQ", #shaker
+  "https://akns-images.eonline.com/eol_images/Entire_Site/201506/rs_500x290-150106140457-tumblr_mihnevT0Jb1qasthro1_500.gif", #clapping woman
   "https://thumbs.gfycat.com/RadiantEllipticalHamster-max-1mb.gif", #inside out
 ]
 

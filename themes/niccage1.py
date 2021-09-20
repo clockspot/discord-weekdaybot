@@ -16,10 +16,10 @@ genericResponses = [
   "https://media4.giphy.com/media/XXkxlfPJ6aNLG/giphy.gif", #(anguish)
   "https://c.tenor.com/oKQiFKPXDj0AAAAM/nicholas-cage-i-figured.gif", #i kinda figured that
   "https://media3.giphy.com/media/14nMfF6eUeWayc/giphy.gif", #intense
-  "https://hips.hearstapps.com/esq.h-cdn.co/assets/cm/15/06/54d3d4d09c4a7_-_giphy.gif?resize=480", #zoom in out
+  "https://hips.hearstapps.com/esq.h-cdn.co/assets/cm/15/06/54d3d4d09c4a7_-_giphy.gif", #zoom in out
   "https://c.tenor.com/SgkYQvmIhokAAAAM/nicolas-cage-superman.gif", #where the hell am i
-  "https://akns-images.eonline.com/eol_images/Entire_Site/201506/rs_500x206-150106140303-tumblr_m0umm5OUJh1r4etbjo1_500.gif?fit=around%7C500:206&output-quality=90&crop=500:206;center,top", #nose hold up
-  "https://hips.hearstapps.com/esq.h-cdn.co/assets/cm/15/06/54d3d4cf2ed6d_-_tumblr_m531tczzcy1rozti5o1_500.gif?resize=480:*", #plane
+  "https://akns-images.eonline.com/eol_images/Entire_Site/201506/rs_500x206-150106140303-tumblr_m0umm5OUJh1r4etbjo1_500.gif", #nose hold up
+  "https://hips.hearstapps.com/esq.h-cdn.co/assets/cm/15/06/54d3d4cf2ed6d_-_tumblr_m531tczzcy1rozti5o1_500.gif", #plane
 ]
 
 languageResponses = [
@@ -28,7 +28,7 @@ languageResponses = [
   "https://c.tenor.com/VQOFnvKSEhQAAAAd/fuuuck-nicolas-cage.gif",
   "https://c.tenor.com/MPaw3BET0sUAAAAC/fuck-shit-nicolas-cage.gif",
   "https://c.tenor.com/6-dhnPengagAAAAd/i-will-butt-fuck-you-and-make-you-suck-my-dick-nicolas-cage.gif",
-  "https://64.media.tumblr.com/3b969f7d6ea35caa409ad25d4e6c7b42/c0a799cbbfc0f0a4-52/s250x400/10f5bffb1dafc717c2b903e77cff9665e70b738f.gifv", #intense emotion
+  "https://64.media.tumblr.com/3b969f7d6ea35caa409ad25d4e6c7b42/c0a799cbbfc0f0a4-52/s250x400/10f5bffb1dafc717c2b903e77cff9665e70b738f.gif", #intense emotion
 ]
 
 whoResponses = False
