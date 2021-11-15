@@ -13,7 +13,7 @@ POSTCHAN = os.getenv('DISCORD_POSTCHANNELNAME')
 
 #themes, part 1 (see part 2, and also bot.py)
 import themes.default
-import themes.halloween
+import themes.autumn
 
 client = discord.Client()
 
@@ -28,10 +28,10 @@ async def on_ready():
         today = date.today()
         #In original usage, I had an array of weekday sets, and we would send the current weekday determined by ISO week % number of sets (last appeared in commit f89d7dd 2021-09-12)
         #themes, part 2 (see part 1)
-        if today >= date(2021,11,1):
+        if today >= date(2021,11,21):
           theme = themes.default
         else:
-          theme = themes.halloween
+          theme = themes.autumn
           
         if theme.weekdays: #if theme specifies weekdays, send the first – any others can come as responses to bot.py
           await channel.send(theme.weekdays[today.weekday()][0])
