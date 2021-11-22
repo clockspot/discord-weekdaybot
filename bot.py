@@ -37,6 +37,8 @@ async def on_message(message):
     elif theme.whoResponses and ("who" in message.content):
       await message.channel.send(random.choice(theme.whoResponses))
     elif "day" in message.content or "date" in message.content:
+      if theme.weekdayLabels and theme.weekdayLabels[today.weekday()]: #for weeks where the gif doesn't explicitly say the weekday
+        await channel.send(theme.weekdayLabels[today.weekday()]);
       await message.channel.send(random.choice(theme.weekdays[today.weekday()]))
     else:
       if theme.genericResponses:
