@@ -36,6 +36,16 @@ whoResponses = [
   "https://tenor.com/view/star-trek-data-shrug-what-no-idea-gif-13886831",
 ]
 
+weekdayLabels = [
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  ""
+]
+
 weekdays = [
   [ #MONDAY
     "https://cdn.discordapp.com/attachments/689595176397832208/836236164272488478/image0.jpg", #MONDAY nancy
