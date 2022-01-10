@@ -11,9 +11,7 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 
 #themes, part 1 (see part 2, and also bot-weekday.py)
 import themes.default
-import themes.christmas1
-import themes.christmas2
-import themes.christmas3
+import themes.signlanguage
 
 client = discord.Client()
 
@@ -29,14 +27,10 @@ async def on_message(message):
   if client.user.mentioned_in(message):
     today = date.today()
     #themes, part 2 (see part 1)
-    if today >= date(2022,1,3):
+    if today >= date(2022,1,17):
       theme = themes.default
-    else if today >= date(2021,12,27):
-      theme = themes.christmas3
-    else if today >= date(2021,12,20):  
-      theme = themes.christmas2
     else:
-      theme = themes.christmas1
+      theme = themes.signlanguage
     
     if theme.languageResponses and ("fuck" in message.content or "f*ck" in message.content or "Fuck" in message.content or "FUCK" in message.content or "shit" in message.content or "Shit" in message.content or "SHIT" in message.content or "arse" in message.content or " ass" in message.content):
       await message.channel.send(random.choice(theme.languageResponses))

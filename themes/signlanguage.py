@@ -1,6 +1,24 @@
-genericResponses = False
+genericResponses = [
+  "https://cdn.discordapp.com/attachments/855980303570042910/929974220274937886/sign-language-gifs-robert-demayo-24-58ad5072c4063__700.gif", #bored
+  "https://cdn.discordapp.com/attachments/855980303570042910/929974344963219526/3d66a5d564e2b842501ac759de4fb3ea.gif", #drunk
+  "https://cdn.discordapp.com/attachments/855980303570042910/929974428090130483/giphy.gif", #diarrhea
+  "https://cdn.discordapp.com/attachments/855980303570042910/929974520125722694/Hq3r.gif", #vomit
+  "https://cdn.discordapp.com/attachments/855980303570042910/929974578955059280/images-2.fit_lim.size_376x.gif", #tinnitus
+  "https://cdn.discordapp.com/attachments/855980303570042910/929974646034542612/giphy.0.gif", #rofl
+  "https://cdn.discordapp.com/attachments/855980303570042910/929974795620196372/giphy-1.gif", #crab
+  "https://cdn.discordapp.com/attachments/855980303570042910/929974855502286848/1e7f5627c6ec32da55a3ba3339250f13.gif", #fire
+  "https://cdn.discordapp.com/attachments/855980303570042910/929974907553583144/dXK.gif", #hurt or pain
+  "https://media2.giphy.com/media/3o7TKSRNcdPmcNmTGo/giphy.gif", #you're welcome
+  "https://i.gifer.com/Famx.gif", #dead
+  "https://i.pinimg.com/originals/05/03/b1/0503b122fc623e61e5addd4ddc6afb93.gif", #are you all right
+]
 
-languageResponses = False
+languageResponses = [
+  "https://i.gifer.com/18ys.gif", #goodbye
+  "https://i.pinimg.com/originals/41/3b/6e/413b6e8875e740dcdcc93056b02668b6.gif", #byebye
+  "https://static.boredpanda.com/blog/wp-content/uploads/2017/02/sign-language-gifs-robert-demayo-2-58ad4fbfc97ca__700.gif", #shocked
+  "https://i.gifer.com/TiVp.gif", #shocked
+]
 
 whoResponses = False
 

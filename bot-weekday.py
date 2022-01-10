@@ -13,9 +13,7 @@ POSTCHAN = os.getenv('DISCORD_POSTCHANNELNAME')
 
 #themes, part 1 (see part 2, and also bot.py)
 import themes.default
-import themes.christmas1
-import themes.christmas2
-import themes.christmas3
+import themes.signlanguage
 
 client = discord.Client()
 
@@ -30,14 +28,10 @@ async def on_ready():
         today = date.today()
         #In original usage, I had an array of weekday sets, and we would send the current weekday determined by ISO week % number of sets (last appeared in commit f89d7dd 2021-09-12)
         #themes, part 2 (see part 1)
-        if today >= date(2022,1,3):
+        if today >= date(2022,1,17):
           theme = themes.default
-        else if today >= date(2021,12,27):
-          theme = themes.christmas3
-        else if today >= date(2021,12,20):  
-          theme = themes.christmas2
         else:
-          theme = themes.christmas1
+          theme = themes.signlanguage
           
         if theme.weekdayLabels and theme.weekdayLabels[today.weekday()]: #for weeks where the gif doesn't explicitly say the weekday
           await channel.send(theme.weekdayLabels[today.weekday()]);
